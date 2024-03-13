@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
 // function to shuffle one array
-export function shuffle(array) {
+export function shuffle(array) { // Aleya: export funtion creates a function to be used elsewhere
   var currentIndex = array.length,
     temporaryValue,
     randomIndex;

@@ -18,7 +18,7 @@ export function staircase(dotDiff, prevTrialPerf, dir, trialNum) {
     // If the last trial was correct
     if (back2) {
       // AND two trials ago were correct
-      if (trialNum < 7) dotDiff -= 0.4;
+      if (trialNum < 7) dotDiff -= 0.4; // Aleya: making dots harder to distinguish if participant performed correctly two trials in a row.
       // for 0==trial and for the second half of the practice
       else if (trialNum > 6 && trialNum < 12) dotDiff -= 0.2;
       // for the first 5 trials of the practice

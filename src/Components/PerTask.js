@@ -14,7 +14,7 @@ import { DATABASE_URL } from "./config";
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////
-// THIS CODES THE TASK SESSION
+// THIS CODES THE TASK SESSION (Aleya: big script that runs the task using other functions)
 // 1) Pre task confidence ratings
 // 2) Task with trial by trial conf ratings
 
@@ -41,7 +41,7 @@ class PerTask extends React.Component {
 
     const memCorrectPer = this.props.state.memCorrectPer;
     const perCorrectPer = this.props.state.perCorrectPer; //if perception task is done, it will be filled, else zero
-
+// Aleya: can change this to make trials shorter
     var trialNumTotal = 150; //150
     var blockNumTotal = 3;
     var trialNumPerBlock = Math.round(trialNumTotal / blockNumTotal);

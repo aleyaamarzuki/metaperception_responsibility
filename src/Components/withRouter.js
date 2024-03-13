@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom"; //makes it faster to link to task on participant's browser https://reactrouter.com/en/main/start/overview
 
 function withRouter(Component) {
   function ComponentWithRouterProp(props) {

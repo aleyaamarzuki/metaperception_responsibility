@@ -21,7 +21,7 @@ var rightBoxStartX =
   (window.innerWidth - bufferFixWidWin) / 2 - squareWidth / 2 + boxDist;
 var rightBoxStartY = (window.innerHeight - bufferFix) / 2 - squareWidth / 2;
 
-export const DrawDots = ({ dotRadius, dotDiffLeft, dotDiffRight }) => {
+export const DrawDots = ({ dotRadius, dotDiffLeft, dotDiffRight }) => { // Aleya: these parameters are from genDotPos in utils
   var dotCir = dotRadius * 2;
 
   var leftDotPos = utils.genDotPos(
